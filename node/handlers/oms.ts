@@ -6,9 +6,6 @@ export async function oms(ctx: Context, next: () => Promise<any>) {
 
   const { OrderId } = await json(ctx.req)
   const {clientProfileData: { email: userId }} = await ctx.clients.oms.order(OrderId)
-  console.log(OrderId)
-  console.log(userId)
-
 
   const data:any = await ctx.clients.masterdata.searchDocuments({
     dataEntity:'CL',
@@ -19,7 +16,7 @@ export async function oms(ctx: Context, next: () => Promise<any>) {
       page:1
     }
   })
-  console.log(data)
+
 
 
   if(!data){
