@@ -21,7 +21,7 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "7slql6j8i0.execute-api.us-east-2.amazonaws.com",
+        "host": "zq7fojw450.execute-api.us-east-2.amazonaws.com",
         "path": "*"
       }
     },
